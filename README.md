@@ -21,37 +21,38 @@ myproject/ ├── db.sqlite3 # SQLite database file ├── manage.py # Dja
    cd your-repo-name
 
 2. Create and activate a virtual environment:
-
+```sh
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+```
 3. Install dependencies:
+```
 
 pip install -r requirements.txt
-
+```
 4. Apply database migrations:
-
+```
 python manage.py migrate
-
+```
 5. Seed the database with sample data:
-
+```
 python manage.py seed
-
+```
 6. Start the development server:
-
+```
 python manage.py runserver
-
+```
 API Endpoints
-
+```
 Method	Endpoint	Description
 GET	/incidents	Retrieve all incidents
 POST	/incidents	Create a new incident
 GET	/incidents/<id>	Retrieve a specific incident
 DELETE	/incidents/<id>	Delete a specific incident
-
+```
 
 Example Incident Object:
-
+```
 {
   "id": 1,
   "title": "AI system misidentification",
@@ -59,11 +60,11 @@ Example Incident Object:
   "severity": "High",
   "reported_at": "2025-04-24T13:40:00Z"
 }
-
+```
 Running Tests
 Run the following command to execute the test suite:
-
+```
 python [manage.py](http://_vscodecontentref_/14) test
-
+```
 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
